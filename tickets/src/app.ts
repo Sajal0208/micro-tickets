@@ -12,10 +12,10 @@ const app = express();
 app.set('trust proxy', true); // trust traffic coming from ingress-nginx
 app.use(json());
 app.use(
-  cookieSession({
+  cookieSession(
     signed: false,
-    secure: process.env.NODE_ENV !== 'test',
-  })
+    secure: false
+  )
 )
 app.use(currentUser);
 
