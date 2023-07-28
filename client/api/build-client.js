@@ -5,7 +5,7 @@ export default ({ req }) => {
         // we are on the server!
         // requests should be made to http://ingress-nginx.ingress-nginx.svc.cluster.local
         return axios.create({
-            baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+            baseURL: 'http://www.microtickets-prod.xyz/',
             headers: req.headers
         });
     } else {
