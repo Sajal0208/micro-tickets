@@ -1,4 +1,4 @@
-name: payments-auth
+name: deploy-payments
 
 on: 
   pull_request: 
